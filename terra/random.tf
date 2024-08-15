@@ -1,0 +1,6 @@
+# random.tf
+
+resource "random_string" "suffix" {
+  length  = 5
+  special = false
+}

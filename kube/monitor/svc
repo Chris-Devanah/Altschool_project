@@ -1,0 +1,12 @@
+NAME                                         TYPE           CLUSTER-IP       EXTERNAL-IP                                                              PORT(S)                      AGE
+alertmanager-operated                        ClusterIP      None             <none>                                                                   9093/TCP,9094/TCP,9094/UDP   4m40s
+ingress-ingress-nginx-controller             LoadBalancer   172.20.255.221   a5283017866a44f7f80e60881d863b76-605832234.us-east-1.elb.amazonaws.com   80:32571/TCP,443:31591/TCP   19h
+ingress-ingress-nginx-controller-admission   ClusterIP      172.20.175.17    <none>                                                                   443/TCP                      19h
+kubernetes                                   ClusterIP      172.20.0.1       <none>                                                                   443/TCP                      20h
+prometheus-grafana                           ClusterIP      172.20.147.173   <none>                                                                   80/TCP                       4m44s
+prometheus-kube-prometheus-alertmanager      ClusterIP      172.20.159.129   <none>                                                                   9093/TCP,8080/TCP            4m44s
+prometheus-kube-prometheus-operator          ClusterIP      172.20.57.162    <none>                                                                   443/TCP                      4m44s
+prometheus-kube-prometheus-prometheus        ClusterIP      172.20.2.147     <none>                                                                   9090/TCP,8080/TCP            4m44s
+prometheus-kube-state-metrics                ClusterIP      172.20.239.193   <none>                                                                   8080/TCP                     4m44s
+prometheus-operated                          ClusterIP      None             <none>                                                                   9090/TCP                     4m39s
+prometheus-prometheus-node-exporter          ClusterIP      172.20.124.135   <none>                                                                   9100/TCP                     4m44s
