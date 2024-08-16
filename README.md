@@ -96,7 +96,7 @@ EKS provisioned by terraform.
 7. Configure the kubectl to connect to the EKS cluster, specify the region and the cluster name.
 
 ```
-aws eks update-kubeconfig --name Sock_Shop-eks --region us-east-1
+aws eks update-kubeconfig --name Sock_Shop --region us-east-1
 ```
 
 ![2024-08-14-19-00-20](https://github.com/user-attachments/assets/a9e6e351-04b2-4145-9366-be30ef13be72)
@@ -136,6 +136,36 @@ After setup, wait a couple of hours depending on your provider for the Domain Na
 ![2024-08-15-10-15-21](https://github.com/user-attachments/assets/879d102f-49c3-46d0-97db-971bf3ad452b)
 
 
+## Monitoring and Logging
 
+Prometheus will be used to monitor the performance and health of the application. This will include metrics such as request latency, error rate, and request volume.
 
+Grafana will be used to visualize the metrics and create dashboards to monitor the performance and health of the application.
+
+1. Get the prometheus repo to your system using this command:
+
+```
+helm repo add prometheus https://prometheus-community.github.io/helm-charts
+```
+![2024-08-15-14-04-53](https://github.com/user-attachments/assets/4313f271-250c-45f4-a848-ab5c09ba4038)
+
+2. Install prometheus using the command:
+
+```
+helm install prometheus prometheus/kube-prometheus-stack
+```
+Once it is installed, check the status and ensure that the installation also added grafana to its configuration.
+Configure the ingress.yaml file to deploy the prometheus and grafana to your application for monitoring.
+
+![2024-08-15-14-45-47](https://github.com/user-attachments/assets/d73cc16c-db60-491f-915b-7ff1d46b4836)
+
+![2024-08-15-14-47-50](https://github.com/user-attachments/assets/d656bfe2-2595-43eb-9047-a8111a518f0d)
+
+![2024-08-15-15-01-09](https://github.com/user-attachments/assets/5b3750b2-310d-4332-92b1-23a59b60c849)
+
+3. Once that is done, return to the AWS management console and setup the monitoring subdomain using route 53.
+4. 
+![2024-08-15-15-08-07](https://github.com/user-attachments/assets/a08d2162-0482-40b1-bf89-05481892c49b)
+
+Once that has been done, log into your grafana profile using the subdomain which has been configured to point to it.
 
