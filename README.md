@@ -55,7 +55,7 @@ Make sure you have installed Terraform alongside AWS CLI on your local machine. 
 
 3. Git clone this repository and navigate to the terraform folder to have the Terraform configuration files and initiate the Terraform project.
 
-[ Altschool_project](https://github.com)
+[ Altschool_project](https://github.com/Chris-Devanah/Altschool_project/tree/main)
 
 
 
