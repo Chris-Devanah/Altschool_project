@@ -3,7 +3,7 @@
 A microservices-based architecture application is deployed on Kubernetes and there’s a need to create a clear IaaC (Infrastructure as Code) deployment to be able to deploy the services in a fast manner.
 This project will be implemented using Terraform for infrastructure provisioning, Kubernetes for container orchestration, Helm for package management, and Prometheus for monitoring.
 
-**Project Requirements:**
+**PROJECT REQUIREMENTS:**
 
 
 Socks Shop Application
@@ -34,4 +34,7 @@ Prometheus: Prometheus is an open-source monitoring and alerting toolkit designe
 Socks Shop Application: The Socks Shop application is a popular microservices-based e-commerce platform that is used for this project.
 
 
+**GETTING STARTED**
+
+**Infrastructure Provisioning**
 
