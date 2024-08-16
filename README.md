@@ -1,6 +1,8 @@
 # Project Overview: 
 
-A microservices-based architecture application is deployed on Kubernetes and there’s a need to create a clear IaaC (Infrastructure as Code) deployment to be able to deploy the services in a fast manner.
+![Wireframe - 1](https://github.com/user-attachments/assets/ee9b4347-162a-436f-9598-806815ab4f22)
+
+A microservices-based architecture application is deployed on Kubernetes and there’s a need to create a clear IaaC (Infrastructure as Code) deployment to be able to deploy the services quickly.
 This project will be implemented using Terraform for infrastructure provisioning, Kubernetes for container orchestration, Helm for package management, and Prometheus for monitoring.
 
 ## PROJECT REQUIREMENTS:
